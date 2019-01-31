@@ -1,0 +1,21 @@
+######################################################################
+#			Code running instructions
+#######################################################################
+
+The code is built in small pieces due to the large amount of memory the files need
+
+Due to memory resource is highly recommended that, every time a files 
+has completed its tasks, the R session to be restarted.
+
+Each code calls all libraries needed.
+ 
+To reproduce results please run files in the following order.
+
+1.- 'gatech ian.R' is the scrapping code for the NPI registry API
+2.- 'scrape_taxcode.R' is the code for scrapping the taxonomy code site
+3.- 'depurate_network.R' builds a data set from API info from step 1
+4.- 'come_together.R' joins the data with the pps data 
+5.- 'filter_interest.R' filters the network for the physicians of interest
+
+
+
