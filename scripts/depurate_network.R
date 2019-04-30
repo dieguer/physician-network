@@ -44,5 +44,5 @@ rm( desc_tax,  taxo, zip, state, npi)
 
 rm(a)
 
-write.csv(npi_wdata, file = '~/Documents/health_replication/npi_wdata.csv',row.names = F)
+fwrite(npi_wdata, file = '~/Documents/health_replication/npi_wdata.csv',row.names = F)
 

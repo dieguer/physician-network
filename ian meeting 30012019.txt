@@ -1,0 +1,18 @@
+Meeting.  
+
+switch to 90 days for 2014 and 2015
+
+p that moved from 2014 to 2015.
+
+
+patter physians 
+
+among  those flag those that moved to a new HRR (hospital referral region)
+
+there is a crosswalk table from zip to hrr
+
+check if they moved to non contiguous hrr
+
+
+
+

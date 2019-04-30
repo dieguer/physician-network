@@ -10,7 +10,9 @@ library(bit64)
 
 wdata=fread('~/Documents/health_replication/npi_wdata.csv',header = T, sep=',')
 
-data=fread('~/Documents/health_replication/pspp2014_30.csv', header = T, sep = ',')
+#data=fread('~/Documents/health_replication/pspp2014_30.csv', header = T, sep = ',')
+data=fread('~/Documents/health_replication/pspd2016/root_npi_graph_2016.csv', header = T, sep = ',')
+names(data)=c('npi1', 'npi2', 'pat_count')
 enum=fread('~/Documents/health_replication/core.csv', header = T, sep = ',')
 enum$npi=as.int64(enum$npi)
 
@@ -38,7 +40,7 @@ drops <- c("year","days","begdate","enddate","pcredential","pcredential.2")
 matched=matched[ , !(names(matched) %in% drops)]
 
 
-write.csv(matched, file = '~/Documents/health_replication/shared_pp_data_2014.csv',row.names = F)
+fwrite(matched, file = '~/Documents/health_replication/shared_pp_data_2016.csv',row.names = F)
 
 
 
