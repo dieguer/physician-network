@@ -16,6 +16,6 @@ To reproduce results please run files in the following order.
 3.- 'depurate_network.R' builds a data set from API info from step 1
 4.- 'come_together.R' joins the data with the pps data 
 5.- 'filter_interest.R' filters the network for the physicians of interest
-
+6.-' compared_2.R' builds list of movers from the information on the compared data
 
 
